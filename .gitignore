@@ -1,0 +1,6 @@
+# Local screenshots and ad hoc review files
+Screenshot (*.png
+
+# OS/editor noise
+Thumbs.db
+.DS_Store

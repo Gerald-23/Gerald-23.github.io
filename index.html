@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitebuildersgh | High-Converting Website Solutions</title>
+  <meta
+    name="description"
+    content="Sitebuildersgh creates high-converting websites and landing pages for businesses selling physical products, digital products, or services."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Sitebuildersgh home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span class="brand-text">Sitebuildersgh</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#benefits">Why Us</a>
+        <a href="#results">Results</a>
+        <a href="#lead-form">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Website Solutions For Growth-Focused Businesses</p>
+          <h1>We build business websites that turn traffic into enquiries and sales.</h1>
+          <p class="hero-text">
+            Sitebuildersgh helps businesses selling physical products, digital offers, and services
+            get a conversion-focused online presence that supports marketing, trust, and growth.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-link" href="#lead-form">Let's Start</a>
+            <p class="hero-note">Share your details and continue the conversation on WhatsApp immediately.</p>
+          </div>
+        </div>
+
+        <div class="form-shell">
+          <section class="form-card" id="lead-form">
+            <div class="form-head">
+              <div class="form-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-5"></path>
+                  <path d="M17.5 3.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 8.5-8.5Z"></path>
+                </svg>
+              </div>
+              <h2>Get Started Today</h2>
+              <p>Complete the form below to discuss your website project. After submission, you will be redirected to WhatsApp.</p>
+            </div>
+
+            <form id="lead-form-form" class="lead-form" novalidate>
+              <div class="field-grid">
+                <label>
+                  <span>Full Name</span>
+                  <input type="text" name="fullName" placeholder="Your full name" required>
+                </label>
+
+                <label>
+                  <span>Business Name</span>
+                  <input type="text" name="businessName" placeholder="Your business name" required>
+                </label>
+              </div>
+
+              <div class="field-grid">
+                <label>
+                  <span>Phone Number</span>
+                  <input type="tel" name="phone" placeholder="+233..." required>
+                </label>
+
+                <label>
+                  <span>Email Address</span>
+                  <input type="email" name="email" placeholder="you@example.com" required>
+                </label>
+              </div>
+
+              <label>
+                <span>What do you sell?</span>
+                <select name="businessType" required>
+                  <option value="">Select one</option>
+                  <option value="Physical products">Physical Products</option>
+                  <option value="Professional services">Professional Services</option>
+                  <option value="Digital products">Digital Products</option>
+                  <option value="Both online and physical products">Both online and physical products</option>
+                </select>
+              </label>
+
+              <label>
+                <span>What do you need?</span>
+                <select name="websiteGoal" required>
+                  <option value="">Choose your goal</option>
+                  <option value="More leads and enquiries">More Leads and Enquiries</option>
+                  <option value="Direct online sales">Direct Online Sales</option>
+                  <option value="Brand awareness and credibility">Brand Awareness and Credibility</option>
+                  <option value="A lead generation landing page">A Lead Generation Landing Page</option>
+                </select>
+              </label>
+
+              <label>
+                <span>Tell us briefly about your business</span>
+                <textarea
+                  name="message"
+                  rows="3"
+                  placeholder="What do you sell, who do you sell to, and what do you want the website to help you achieve?"
+                  required
+                ></textarea>
+              </label>
+
+              <label class="checkbox-row">
+                <input type="checkbox" name="consent" required>
+                <span>I agree to be contacted about my website enquiry and understand my details will be saved to the lead sheet.</span>
+              </label>
+
+              <input type="hidden" name="source" value="Meta Ads Landing Page">
+              <input type="hidden" name="submittedAt" id="submittedAt">
+              <input type="hidden" name="pageUrl" id="pageUrl">
+              <input type="hidden" name="utmSource" id="utmSource">
+              <input type="hidden" name="utmMedium" id="utmMedium">
+              <input type="hidden" name="utmCampaign" id="utmCampaign">
+              <input type="hidden" name="utmContent" id="utmContent">
+              <input type="hidden" name="utmTerm" id="utmTerm">
+
+              <button type="submit" id="submit-button">
+                <span>Submit and Continue to WhatsApp</span>
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.438 9.884-9.885 9.884"></path>
+                </svg>
+              </button>
+              <p id="form-status" class="form-status" aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits-section" id="benefits">
+      <div class="container">
+        <div class="section-copy">
+          <p class="eyebrow dark">Why businesses choose Sitebuildersgh</p>
+          <h2>We create websites that help businesses look credible, capture leads, and sell better.</h2>
+          <p>
+            Your website should do more than exist online. It should support your ad spend,
+            make your offer easier to understand, and move interested visitors toward action.
+          </p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 10V3L4 14h7v7l9-11h-7Z"></path>
+              </svg>
+            </div>
+            <h3>Conversion-focused layouts</h3>
+            <p>Landing pages and websites structured to turn traffic into real enquiries and customer actions.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 20h9"></path>
+                <path d="M12 4h9"></path>
+                <path d="M4 9h16"></path>
+                <path d="M4 15h16"></path>
+              </svg>
+            </div>
+            <h3>Clear brand presentation</h3>
+            <p>Professional pages that make your business easier to trust whether you sell products or services.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"></path>
+              </svg>
+            </div>
+            <h3>Fast enquiry handling</h3>
+            <p>Your leads move into a sheet and then straight into WhatsApp so follow-up happens quickly.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20"></path>
+                <path d="m17 5-5-3-5 3"></path>
+                <path d="m17 19-5 3-5-3"></path>
+              </svg>
+            </div>
+            <h3>Built for growth campaigns</h3>
+            <p>Ideal for Meta ads, promotions, business launches, and direct-response campaigns that need measurable leads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-section" id="results">
+      <div class="stats-overlay"></div>
+      <div class="container stats-grid">
+        <div class="stat-block">
+          <strong>Lead-ready</strong>
+          <span>Form-to-WhatsApp flow</span>
+        </div>
+        <div class="stat-block">
+          <strong>Ad-friendly</strong>
+          <span>UTM tracking included</span>
+        </div>
+        <div class="stat-block">
+          <strong>Sheet-connected</strong>
+          <span>Excel-compatible capture</span>
+        </div>
+        <div class="stat-block">
+          <strong>Business-focused</strong>
+          <span>For products and services</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-grid">
+        <div>
+          <p class="eyebrow">Ready to discuss your website?</p>
+          <h2>Let's build a website that helps your business grow.</h2>
+          <p>
+            Submit your details, tell us what you need, and continue the conversation on WhatsApp.
+          </p>
+        </div>
+        <div class="final-cta-actions">
+          <a class="primary-link large" href="#lead-form">Let's Start</a>
+          <span>We hope to hear from you soon.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Copyright &copy; 2026 <strong>Sitebuildersgh</strong>. All rights reserved.</p>
+      <a href="#lead-form">Start your enquiry</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
