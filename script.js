@@ -1,4 +1,5 @@
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwEutjheG8yScccuCqd4wGrBHbirF6tJ4RHp0pkhUDwAMwZ0Li-YJijPuN2P24DL-A2/exec";
+const SCRIPT_URL_PLACEHOLDER = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
 const WHATSAPP_NUMBER = "233597190189";
 const WHATSAPP_MESSAGE = "Hello, I just submitted the website enquiry form and would like to continue on WhatsApp.";
 
@@ -58,7 +59,7 @@ fillTrackingFields();
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  if (SCRIPT_URL.includes("https://script.google.com/macros/s/AKfycbwEutjheG8yScccuCqd4wGrBHbirF6tJ4RHp0pkhUDwAMwZ0Li-YJijPuN2P24DL-A2/exec")) {
+  if (SCRIPT_URL.includes(SCRIPT_URL_PLACEHOLDER)) {
     setStatus("Add your Google Apps Script URL in script.js before using the form.", "error");
     return;
   }
