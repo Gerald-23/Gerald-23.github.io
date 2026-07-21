@@ -27,20 +27,16 @@ function buildWhatsAppUrl(formData) {
 }
 
 async function submitLead(payload) {
+  const body = new URLSearchParams(payload);
+
   const response = await fetch(SCRIPT_URL, {
     method: "POST",
-    mode: "cors",
+    mode: "no-cors",
     headers: {
-      "Content-Type": "application/json",
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
     },
-    body: JSON.stringify(payload),
+    body,
   });
-
-  if (!response.ok) {
-    throw new Error("Submission failed");
-  }
-
-  return response.json();
 }
 
 function fillTrackingFields() {
@@ -80,11 +76,7 @@ form.addEventListener("submit", async (event) => {
   setStatus("Submitting your details...", "");
 
   try {
-    const result = await submitLead(payload);
-
-    if (result.status !== "success") {
-      throw new Error(result.message || "Submission failed");
-    }
+    await submitLead(payload);
 
     setStatus("Details received. Redirecting you to WhatsApp...", "success");
     window.setTimeout(() => {

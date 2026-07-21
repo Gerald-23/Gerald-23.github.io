@@ -2,7 +2,7 @@ const SHEET_NAME = 'Leads';
 
 function doPost(e) {
   try {
-    const data = JSON.parse(e.postData.contents);
+    const data = parseRequestData_(e);
     const sheet = getOrCreateSheet_();
 
     sheet.appendRow([
@@ -35,6 +35,24 @@ function doPost(e) {
       message: error.message,
     });
   }
+}
+
+function parseRequestData_(e) {
+  if (e && e.postData && e.postData.contents) {
+    const raw = e.postData.contents;
+
+    try {
+      return JSON.parse(raw);
+    } catch (error) {
+      // Fall through to standard form-style parameters.
+    }
+  }
+
+  if (e && e.parameter) {
+    return e.parameter;
+  }
+
+  return {};
 }
 
 function getOrCreateSheet_() {
